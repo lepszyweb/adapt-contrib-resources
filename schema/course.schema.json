@@ -18,8 +18,8 @@
               "properties": {
                 "resources": {
                   "type": "string",
-                  "title": "Resources",
-                  "default": "Additional resources.",
+                  "title": "Zasoby",
+                  "default": "Dodatkowe zasoby.",
                   "_adapt": {
                     "translatable": true
                   }
@@ -38,49 +38,49 @@
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Add resource links to the drawer",
-              "description": "Controls whether the Resources extension is enabled or disabled",
+              "title": "Dodaj linki do zasobów do szuflady",
+              "description": "Kontroluje, czy rozszerzenie Zasoby jest włączone czy wyłączone.",
               "default": true
             },
             "_drawerOrder": {
               "type": "number",
-              "title": "Index position in the drawer",
-              "description": "The order in which this extension should appear as a drawer item",
+              "title": "Pozycja wskaźnika w szufladzie",
+              "description": "Kolejność, w jakiej to rozszerzenie ma się pojawiać jako element szuflady",
               "default": 0
             },
             "title": {
               "type": "string",
-              "title": "Title",
-              "default": "Resources",
+              "title": "Tytuł",
+              "default": "Zasoby",
               "_adapt": {
                 "translatable": true
               }
             },
             "description": {
               "type": "string",
-              "title": "Description",
-              "default": "Select here to view resources for this course",
+              "title": "Opis",
+              "default": "Wybierz tutaj, aby wyświetlić zasoby dla tego kursu",
               "_adapt": {
                 "translatable": true
               }
             },
             "_filterButtons": {
               "type": "object",
-              "title": "Filter buttons",
+              "title": "Przyciski filtrów",
               "default": {},
               "properties": {
                 "all": {
                   "type": "string",
-                  "title": "All",
-                  "default": "All",
+                  "title": "Wszystkie",
+                  "default": "Wszystkie",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "document": {
                   "type": "string",
-                  "title": "Documents",
-                  "default": "Documents",
+                  "title": "Dokumenty",
+                  "default": "Dokumenty",
                   "_adapt": {
                     "translatable": true
                   }
@@ -95,8 +95,8 @@
                 },
                 "link": {
                   "type": "string",
-                  "title": "Links",
-                  "default": "Links",
+                  "title": "Linki",
+                  "default": "Linki",
                   "_adapt": {
                     "translatable": true
                   }
@@ -105,21 +105,21 @@
             },
             "_filterAria": {
               "type": "object",
-              "title": "Filter ARIA labels",
+              "title": "Etykieta ARIA filtrów",
               "default": {},
               "properties": {
                 "allAria": {
                   "type": "string",
-                  "title": "All",
-                  "default": "View all resources",
+                  "title": "Wszystkie",
+                  "default": "Zobacz wszystkie zasoby",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "documentAria": {
                   "type": "string",
-                  "title": "Documents",
-                  "default": "View document resources",
+                  "title": "Dokumenty",
+                  "default": "Zobacz wszystkie dokumenty",
                   "_adapt": {
                     "translatable": true
                   }
@@ -127,15 +127,15 @@
                 "mediaAria": {
                   "type": "string",
                   "title": "Media",
-                  "default": "View media resources",
+                  "default": "Zobacz wszystkie media",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "linkAria": {
                   "type": "string",
-                  "title": "Links",
-                  "default": "View resource links",
+                  "title": "Linki",
+                  "default": "Zobacz wszystkie linki",
                   "_adapt": {
                     "translatable": true
                   }
@@ -144,13 +144,13 @@
             },
             "_resourcesItems": {
               "type": "array",
-              "title": "Items",
+              "title": "Elementy",
               "items": {
                 "type": "object",
                 "properties": {
                   "_type": {
                     "type": "string",
-                    "title": "Type",
+                    "title": "Rodzaj",
                     "enum": [
                       "document",
                       "media",
@@ -160,21 +160,21 @@
                   },
                   "_forceDownload": {
                     "type": "boolean",
-                    "title": "Force download",
-                    "description": "Forces the resource to be downloaded rather than opened in the browser. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL",
+                    "title": "Wymuś pobrania",
+                    "description": "Wymusza pobranie zasobu zamiast otwierania go w przeglądarce. Obsługiwane tylko w przeglądarkach obsługujących atrybut 'download' i dla zasobów, które są częścią zawartości kursu/hostowane pod tym samym adresem URL",
                     "default": false
                   },
                   "title": {
                     "type": "string",
-                    "title": "Title",
+                    "title": "Tytuł",
                     "_adapt": {
                       "translatable": true
                     }
                   },
                   "filename": {
                     "type": "string",
-                    "title": "Filename",
-                    "description": "Used to set the name of the downloaded file to something different to the source filename. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL. Forces the file to be downloaded regardless of what 'Force download' is set to",
+                    "title": "Nazwa pliku",
+                    "description": "Służy do ustawienia nazwy pobieranego pliku na inną niż nazwa pliku źródłowego. Obsługiwane tylko w przeglądarkach, które obsługują atrybut 'download' oraz dla zasobów, które są częścią zawartości kursu/hostowane pod tym samym adresem URL. Wymusza pobranie pliku bez względu na to, co jest ustawione w opcji 'Wymuś pobranie'.",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -182,7 +182,7 @@
                   },
                   "description": {
                     "type": "string",
-                    "title": "Description",
+                    "title": "Opis",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -191,7 +191,7 @@
                   "_link": {
                     "type": "string",
                     "isObjectId": true,
-                    "title": "Source",
+                    "title": "Źródło",
                     "_backboneForms": "Asset"
                   }
                 }
